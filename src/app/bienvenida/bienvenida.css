@@ -1,0 +1,49 @@
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* Ajustado para que no aparezca scroll */
+  
+  /* Un degradado azul oscuro tipo "Space" */
+  background: radial-gradient(circle at top right, #1a2a6c, #b21f1f, #fdbb2d); /* Opción 1: Colorido */
+  /* background: linear-gradient(135deg, #0f2027, #203a43, #2d4e5e); /* Opción 2: Más sobrio/tech */
+  
+  margin: -8px; /* Para matar los bordes blancos del body si aparecen */
+}
+
+.card {
+  width: 400px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9); /* Blanco con un poquito de transparencia */
+  backdrop-filter: blur(10px); /* Efecto de vidrio esmerilado */
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: none;
+  background-color: #1976d2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}

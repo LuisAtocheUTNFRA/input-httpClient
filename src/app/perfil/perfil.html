@@ -1,0 +1,15 @@
+<div style="text-align: center; padding: 20px;">
+  <h1>Mi Perfil de GitHub</h1>
+
+  @if (infoUsuario()) {
+    <div class="perfil-card" style="border: 1px solid #ccc; padding: 20px; border-radius: 10px; display: inline-block;">
+      <img [src]="infoUsuario().avatar_url" width="150" style="border-radius: 50%;">
+      <h2>{{ infoUsuario().name }}</h2>
+      <p><i>{{ infoUsuario().bio }}</i></p>
+      <p>📍 {{ infoUsuario().location }}</p>
+      <a [href]="infoUsuario().html_url" target="_blank" style="color: cyan;">Ver Perfil Oficial</a>
+    </div>
+  } @else {
+    <p>Buscando datos en GitHub...</p>
+  }
+</div>
