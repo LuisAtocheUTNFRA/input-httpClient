@@ -1,14 +1,10 @@
-<div class="welcome-container">
-  <div class="card">
-    <div class="header">
-      <span class="title">Gestor de Tareas</span>
-      <p class="subtitle">UTN Avellaneda - Progra IV</p>
-    </div>
-    <div class="content">
-      <p>Bienvenido al sistema de gestión.</p>
-    </div>
-    <div class="actions">
-      <button routerLink="/login" class="btn-primary">Comenzar ahora</button>
-    </div>
-  </div>
+<div style="display: flex; gap: 20px; flex-wrap: wrap;">
+  @for (p of misProyectos; track p.t) {
+    <app-card 
+      [titulo]="p.t" 
+      [subtitulo]="p.s" 
+      [imagen]="p.img" 
+      [link]="p.l">
+    </app-card>
+  }
 </div>
